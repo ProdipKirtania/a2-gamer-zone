@@ -14,10 +14,11 @@
     --light1: #3c354f;
     --light2: #534c64;
     --primary-color: #ff42a5;
-    --text-primary-color: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+    --text-primary-color: linear-gradient(90deg, #F948B2 0%, #F948B2 100%);
     --secondary-color: #4ec5f7;
     --white: #fff;
     --red: #ff0000;
+    --light-red: #de020291;
 }
 
 body {
@@ -31,7 +32,7 @@ li {
 
 .btn-primary {
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 12px 25px;
     background-color: var(--primary-color);
     color: var(--white);
@@ -50,7 +51,7 @@ li {
 
 .btn-secondary {
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 12px 25px;
     background-color: var(--secondary-color);
     color: var(--white);
@@ -86,7 +87,7 @@ li {
     padding: 20px 0;
 }
 
-.gradient-title {
+.title-gradient {
     background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -95,13 +96,12 @@ li {
     font-weight: 700;
 }
 
-.gradient-text {
+.text-gradient {
     background: linear-gradient(180deg, #f948b2 0%, #8758f1 250%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 /* global styles end*/
 
@@ -149,4 +149,61 @@ nav>ul>li:last-child {
     background: rgba(11, 2, 35, 0.1);
 }
 
-/* header style end */
+/* header navbar section styles end */
+
+
+
+/* banner section styles start */
+.banner-section {
+    background-image: url("./images/background-img.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: center left;
+  }
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(10px + 10%);
+  }
+  
+  .banner{
+    flex: 1;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+
+  }
+
+  .banner h1 {
+    font-size: 3.0rem;
+    font-weight: 800;
+  }
+
+  .banner-content button {
+    margin-right: 15px;
+  }
+  
+  .banner-img {
+    flex: 1;
+  }
+
+  .banner-img img {
+    width: 100%;
+  }
+  
+  .banner ul {
+    margin: 15px 0;
+  }
+  
+  .banner ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    gap: 20px;
+  }
+/* banner section styles end */
