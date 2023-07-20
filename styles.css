@@ -474,3 +474,70 @@ footer {
   }
   
   /* footer style  */
+
+
+  /* for responsive */
+@media screen and (max-width: 576px) {
+    header {
+      position: static;
+      box-shadow: none;
+    }
+    .banner-section {
+      background-image: none;
+    }
+    nav,
+    nav > ul,
+    .gamer-section,
+    .instantly-section,
+    .footer-menu,
+    .social-icons,
+    .terms {
+      flex-direction: column;
+    }
+    .banner-container {
+      flex-direction: column-reverse;
+    }
+    .banner {
+      padding: 40px;
+      background-image: url("./images/background-img.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+    .online-section-img-container {
+      grid-template-columns: 1fr;
+    }
+    .instant-small-img {
+      bottom: -30px;
+      left: -50px;
+    }
+    .instantly-text,
+    .play-content {
+      text-align: center;
+    }
+    .instantly-big-img {
+      margin-left: 30px;
+    }
+    .play-img {
+      margin-right: 30px;
+      margin-top: 40px;
+    }
+    .banner-content button,
+    .logo {
+      margin-bottom: 10px;
+    }
+    .item{
+      font-size: 0.6rem;
+      font-weight: 400;
+      padding: 5px 0px;
+      gap: 5px;
+    }
+    .item img {
+      width: 10%;
+    }
+    .game-category-section{
+      padding: 30px 0px;
+    }
+  }
+  
+  
