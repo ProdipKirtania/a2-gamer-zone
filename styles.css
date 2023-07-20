@@ -61,6 +61,12 @@ li {
     text-transform: uppercase;
 }
 
+.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+    outline: 1.5px solid var(--secondary-color);
+}
+
 .logo img {
     width: 40px;
 }
@@ -81,7 +87,7 @@ li {
     color: var(--dark);
 }
 
-.description {
+.desc {
     color: var(--light1);
     font-size: 0.9rem;
     padding: 20px 0;
@@ -159,51 +165,97 @@ nav>ul>li:last-child {
     background-repeat: no-repeat;
     background-size: 50% 100%;
     background-position: center left;
-  }
-  .banner-container {
+}
+
+.banner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 calc(10px + 10%);
-  }
-  
-  .banner{
-    flex: 1;
-  }
+}
 
-  .banner h2 {
+.banner {
+    flex: 1;
+}
+
+.banner h2 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--dark);
     text-transform: uppercase;
 
-  }
+}
 
-  .banner h1 {
+.banner h1 {
     font-size: 3.0rem;
     font-weight: 800;
-  }
+}
 
-  .banner-content button {
+.banner-content button {
     margin-right: 15px;
-  }
-  
-  .banner-img {
-    flex: 1;
-  }
+}
 
-  .banner-img img {
+.banner-img {
+    flex: 1;
+}
+
+.banner-img img {
     width: 100%;
-  }
-  
-  .banner ul {
+}
+
+.banner ul {
     margin: 15px 0;
-  }
-  
-  .banner ul li {
+}
+
+.banner ul li {
     display: flex;
     align-items: center;
     padding: 5px 0;
     gap: 20px;
-  }
+}
+
 /* banner section styles end */
+
+
+/* gamer section styles start */
+.gamer-section {
+    background-color: #FFF9FC;
+}
+
+.gamer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(10px + 10%);
+    position: relative;
+}
+
+.gamer-img {
+    flex: 1;
+}
+
+.gamer-img img {
+    width: 100%;
+}
+
+.gamer-text {
+    flex: 1;
+    text-align: end;
+    max-width: 400px;
+}
+
+.gamer-text h1 {
+    color: var(--light2);
+    padding-top: 8px;
+}
+
+.gamer-text h3 {
+    color: var(--light2);
+    padding-top: 8px;
+}
+
+.gamer-text h3 {
+    font-weight: 500;
+}
+
+/* gamer section styles end */
